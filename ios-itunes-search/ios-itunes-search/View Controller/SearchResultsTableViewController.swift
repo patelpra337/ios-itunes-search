@@ -39,7 +39,7 @@ class SearchResultsTableViewController: UITableViewController {
 }
 
 extension SearchResultsTableViewController: UISearchBarDelegate {
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = self.searchBar.text else { return }
         
         var resultType: ResultType!
@@ -54,7 +54,7 @@ extension SearchResultsTableViewController: UISearchBarDelegate {
             resultType = .software
         }
         
-        self.searchResultsController.performSearch(searchTerm: searchTerm, resultType: resultType) { (error) in
+        self.searchResultsController.performSearch(searchTerm: searchTerm, resultType: resultType!) { (error) in
             if let error = error {
                 NSLog("Search was not able to return any results: \(error)")
                 return
