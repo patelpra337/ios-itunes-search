@@ -48,7 +48,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="k7r-cc-igy" detailTextLabel="b3a-Ro-EVO" style="IBUITableViewCellStyleSubtitle" id="zyD-Yn-yIr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" textLabel="k7r-cc-igy" detailTextLabel="b3a-Ro-EVO" style="IBUITableViewCellStyleSubtitle" id="zyD-Yn-yIr">
                                 <rect key="frame" x="0.0" y="128" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zyD-Yn-yIr" id="CbA-cS-SXN">
@@ -79,6 +79,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="iTunes Search" id="8QF-qp-8Fv"/>
+                    <connections>
+                        <outlet property="searchBar" destination="7YS-pW-tMB" id="P9j-nE-70K"/>
+                        <outlet property="segmentedType" destination="d3c-rj-pbm" id="bty-1M-hN1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsm-H4-c5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

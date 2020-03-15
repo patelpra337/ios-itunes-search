@@ -62,12 +62,12 @@
 		ABEA9157241E844000535B74 /* ios-itunes-search */ = {
 			isa = PBXGroup;
 			children = (
-				ABEA916F241E84AB00535B74 /* Resources */,
-				ABEA916E241E849800535B74 /* View Controller */,
+				ABEA9166241E844D00535B74 /* Info.plist */,
 				ABEA916D241E848800535B74 /* Model Controller */,
 				ABEA916C241E847400535B74 /* Models */,
+				ABEA916F241E84AB00535B74 /* Resources */,
 				ABEA9170241E84CD00535B74 /* StoryBoards */,
-				ABEA9166241E844D00535B74 /* Info.plist */,
+				ABEA916E241E849800535B74 /* View Controller */,
 			);
 			path = "ios-itunes-search";
 			sourceTree = "<group>";
